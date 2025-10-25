@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="Task4.css">
+</head>
+<body>
+    <div class="container" id="authContainer">
+        <div class="form-box">
+            <h2 id="formTitle">Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="submitBtn">Login</button>
+            <p id="toggleForm">Don't have an account? <a href="#" onclick="toggleForm('register')">Register</a></p>
+            <p id="message"></p>
+        </div>
+    </div>
+    <div class="container" id="securedPage" style="display: none;">
+        <h2>Welcome to Secured Page</h2>
+        <p>This is a protected area. Only authenticated users can view this content.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="Task4.js"></script>
+</body>
+</html>
